@@ -1,0 +1,75 @@
+*****************  main input file for PreComp *****************************
+Sample Composite Blade Section Properties
+
+General information -----------------------------------------------
+117    Bl_length   : blade length (m)
+48    N_sections  : no of blade sections (-)
+6        N_materials : no of materials listed in the materials table (material.inp)
+3        Out_format  : output file   (1: general format, 2: BModes-format, 3: both)
+t       TabDelim     (true: tab-delimited table; false: space-delimited table)
+
+Blade-sections-specific data --------------------------------------
+Sec span     l.e.     chord   aerodynamic   af_shape    int str layup
+location   position   length    twist         file          file
+Span_loc    Le_loc    Chord    Tw_aero   Af_shape_file  Int_str_file
+  (-)        (-)       (m)    (degrees)       (-)           (-)
+
+0	0.504545455	5.2	15.59455302	'shape_1.inp'	'layup_1.inp'
+0.020408163	0.490018681	5.208839942	15.58773861	'shape_2.inp'	'layup_2.inp'
+0.040816327	0.472700183	5.237887092	15.41083468	'shape_3.inp'	'layup_3.inp'
+0.06122449	0.454014773	5.293325313	14.94855563	'shape_4.inp'	'layup_4.inp'
+0.081632653	0.434647783	5.367339855	14.25845481	'shape_5.inp'	'layup_5.inp'
+0.102040816	0.415627885	5.452092684	13.39714164	'shape_6.inp'	'layup_6.inp'
+0.12244898	0.397937872	5.540031729	12.42201948	'shape_7.inp'	'layup_7.inp'
+0.142857143	0.381299607	5.621824261	11.39457132	'shape_8.inp'	'layup_8.inp'
+0.163265306	0.365492052	5.692531175	10.37097608	'shape_9.inp'	'layup_9.inp'
+0.183673469	0.351607808	5.742610891	9.403999875	'shape_10.inp'	'layup_10.inp'
+0.204081633	0.340084431	5.764836827	8.551522201	'shape_11.inp'	'layup_11.inp'
+0.224489796	0.331067068	5.75611953	7.83315304	'shape_12.inp'	'layup_12.inp'
+0.244897959	0.324103134	5.703098513	7.191354972	'shape_13.inp'	'layup_13.inp'
+0.265306122	0.318847293	5.604676022	6.551629061	'shape_14.inp'	'layup_14.inp'
+0.285714286	0.314689576	5.471559127	5.933995702	'shape_15.inp'	'layup_15.inp'
+0.306122449	0.311488898	5.322778014	5.346089613	'shape_16.inp'	'layup_16.inp'
+0.326530612	0.308842922	5.166482288	4.796333947	'shape_17.inp'	'layup_17.inp'
+0.346938776	0.306605403	5.019421327	4.296593563	'shape_18.inp'	'layup_18.inp'
+0.367346939	0.304361334	4.885807889	3.846955195	'shape_19.inp'	'layup_19.inp'
+0.387755102	0.301875662	4.767959675	3.445342057	'shape_20.inp'	'layup_20.inp'
+0.408163265	0.299201766	4.65456608	3.07691391	'shape_21.inp'	'layup_21.inp'
+0.428571429	0.296485815	4.541031052	2.733562457	'shape_22.inp'	'layup_22.inp'
+0.448979592	0.293971194	4.428175578	2.412234674	'shape_23.inp'	'layup_23.inp'
+0.469387755	0.291857187	4.316958877	2.111690772	'shape_24.inp'	'layup_24.inp'
+0.489795918	0.29010989	4.207880736	1.828396455	'shape_25.inp'	'layup_25.inp'
+0.510204082	0.2888066	4.101646187	1.558783421	'shape_26.inp'	'layup_26.inp'
+0.530612245	0.288026344	3.998712335	1.30243687	'shape_27.inp'	'layup_27.inp'
+0.551020408	0.28784151	3.899408676	1.064427371	'shape_28.inp'	'layup_28.inp'
+0.571428571	0.287942536	3.803172544	0.843446166	'shape_29.inp'	'layup_29.inp'
+0.591836735	0.288522649	3.709389454	0.636564187	'shape_30.inp'	'layup_30.inp'
+0.612244898	0.289576851	3.617111742	0.4370289	'shape_31.inp'	'layup_31.inp'
+0.632653061	0.291110805	3.525634918	0.239656793	'shape_32.inp'	'layup_32.inp'
+0.653061224	0.293013915	3.434082671	0.039677688	'shape_33.inp'	'layup_33.inp'
+0.673469388	0.295241211	3.341933111	-0.172828124	'shape_34.inp'	'layup_34.inp'
+0.693877551	0.29778414	3.248678448	-0.407083831	'shape_35.inp'	'layup_35.inp'
+0.714285714	0.300565287	3.15610968	-0.680377614	'shape_36.inp'	'layup_36.inp'
+0.734693878	0.303575378	3.064580005	-0.99929361	'shape_37.inp'	'layup_37.inp'
+0.755102041	0.306704465	2.972992647	-1.320525256	'shape_38.inp'	'layup_38.inp'
+0.775510204	0.309882538	2.880705107	-1.623298762	'shape_39.inp'	'layup_39.inp'
+0.795918367	0.313010726	2.786969377	-1.884368146	'shape_40.inp'	'layup_40.inp'
+0.816326531	0.316390428	2.691030939	-2.086230093	'shape_41.inp'	'layup_41.inp'
+0.836734694	0.320211092	2.591965556	-2.163998202	'shape_42.inp'	'layup_42.inp'
+0.857142857	0.324623117	2.489323648	-2.175841166	'shape_43.inp'	'layup_43.inp'
+0.918367347	0.34011904	2.165466732	-2.018403421	'shape_44.inp'	'layup_44.inp'
+0.93877551	0.346055598	2.052625083	-1.896743214	'shape_45.inp'	'layup_45.inp'
+0.959183673	0.352721186	1.937753327	-1.724325763	'shape_46.inp'	'layup_46.inp'
+0.979591837	0.36008903	1.819662967	-1.508125114	'shape_47.inp'	'layup_47.inp'
+1	0.368181818	0.5	-1.242387706	'shape_48.inp'	'layup_48.inp'
+
+Webs (spars) data  --------------------------------------------------
+
+3       Nweb        : number of webs (-)  ! enter 0 if the blade has no webs
+6       Ib_sp_stn   : blade station number where inner-most end of webs is located (-)
+48       Ob_sp_stn   : blade station number where outer-most end of webs is located (-)
+
+Web_num   Inb_end_ch_loc   Oub_end_ch_loc (fraction of chord length)
+1              0.3534           0.1732
+2              0.4813            0.5250
+3              0.9999                0.9999
